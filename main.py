@@ -1,14 +1,18 @@
 import math
 
-angle = 30
-velocity = 10
-gravity = -9.8
+angle = int(input('Angle: '))
+velocity = int(input('Velocity: '))
+gravity = input('Gravity (leave blank for Earth\'s): ')
+if gravity.strip() == '':
+    gravity = -9.8
+else:
+    gravity = int(gravity)
 
 veloY = math.sin(
     math.radians(angle)
     )
-veloY = veloY * 10
-print(f'10 * sin{angle} = Vy')
+veloY = veloY * velocity
+print(f'{velocity} * sin{angle} = Vy')
 print(str(veloY) + ' ')
 
 Vf = veloY * -1
