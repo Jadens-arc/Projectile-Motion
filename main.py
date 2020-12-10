@@ -2,7 +2,7 @@ import math
 
 angle = 30
 velocity = 10
-gravity = 9.8
+gravity = -9.8
 
 veloY = math.sin(
     math.radians(angle)
@@ -30,4 +30,4 @@ print(f'adj = {adj}')
 
 distance = adj * deltaT
 
-print(f'distance = {distance}')
+print(f'distance = {distance}m')
