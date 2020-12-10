@@ -23,6 +23,7 @@ print(f'Vx = {veloY}')
 print(Vy)
 
 deltaT = Vy / gravity
+print(f'deltaT = {Vy} / {gravity}')
 print(f'deltaT (time in seconds) = {deltaT}')
 
 
