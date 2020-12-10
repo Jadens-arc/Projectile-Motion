@@ -12,27 +12,27 @@ veloY = math.sin(
     math.radians(angle)
     )
 veloY = veloY * velocity
-print(f'{velocity} * sin{angle} = Vy')
-print(str(veloY) + ' ')
+print(f'{velocity} * sin{angle} = Vy >')
+print(' > ' + str(veloY))
 
 Vf = veloY * -1
 Vx = veloY
 Vy = Vf - Vx
-print(f'Vf = {Vf}')
+print(f'\nVf = {Vf}')
 print(f'Vx = {veloY}')
-print(Vy)
+print(f'Vy = {Vy} \n')
 
 deltaT = Vy / gravity
 print(f'deltaT = {Vy} / {gravity}')
-print(f'deltaT (time in seconds) = {deltaT}')
+print('\033[95m' + f'deltaT (time in seconds) = {deltaT}s' + '\033[0m')
 
 
 adj = velocity * math.cos(
     math.radians(angle)
     )
-    
-print(f'adj = {adj}')
+print(f'\nadj = {velocity} * cos{angle} >')
+print(f' > adj = {adj}')
 
 distance = adj * deltaT
 
-print(f'distance = {distance}m')
+print('\033[95m' + f'distance = {distance}m' + '\033[0m')
