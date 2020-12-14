@@ -9,7 +9,7 @@ gravity = input('Gravity (leave blank for Earth\'s): ')
 if gravity.strip() == '':
     gravity = -9.8
 else:
-    gravity = int(gravity)
+    gravity = float(gravity)
 
 # calculate veloY(not an official term)
 # velocity * sin(angle)
