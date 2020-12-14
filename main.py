@@ -1,8 +1,8 @@
 import math # for sin, cos, and other math functions
 
 # collect information from user
-angle = int(input('Angle: '))
-velocity = int(input('Velocity: '))
+angle = float(input('Angle: '))
+velocity = float(input('Velocity: '))
 gravity = input('Gravity (leave blank for Earth\'s): ')
 
 # handle if user wants earths gravity by inputing nothing
